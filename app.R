@@ -72,7 +72,7 @@ make_short_name <- function(x) {
   
   return(short_name)
 }
-
+ 
 # 2. STANDARD PROJECT FOLDER STRUCTURE
 
 project_folders <- c(
