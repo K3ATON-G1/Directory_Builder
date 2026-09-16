@@ -94,16 +94,21 @@ Users do not need R or RStudio.
 
 The source code is stored in this GitHub repository for documentation, maintenance, and future development. The hosted application runs the R code remotely through shinyapps.io (Posit, 2026).
 
-## Running the Application Locally
+## Local Windows Version
 
-Developers who want to run the application locally will need:
+The local version allows users to select an exact Parent Directory on their computer. It creates the complete project directory directly inside that location without downloading a ZIP file.
 
-* R
-* RStudio
-* The R package `shiny`
-* The R package `zip`
+### Requirements
 
-Install the required packages by running:
+- Windows
+- R
+- RStudio
+- The R package `shiny`
+
+Install Shiny by running:
+
+```r
+install.packages("shiny")
 
 ```r
 install.packages(c("shiny", "zip"))
