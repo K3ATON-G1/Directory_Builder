@@ -114,7 +114,7 @@ install.packages("shiny")
 install.packages(c("shiny", "zip"))
 ```
 
-After installation, open `app.R` and click **Run App**.
+After installation, open `Directory_Builder_Local_Launcher.R` and click **Run App**.
 
 ## Important Information
 
