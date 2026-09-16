@@ -1,50 +1,30 @@
-DIRECTORY_BUILDER
-=================
+# DIRECTORY BUILDER
 
-An R Shiny application for creating standardized project directory structures.
+Directory Builder is an automated R Shiny application for creating standardized project directory structures.
 
-Directory Builder is an automated R Shiny application for creating a
-standardized project directory structure.
+The application is already configured and does not require users to install R, install RStudio, or modify the application code.
 
-The application is already configured and does not require any changes
-to the R code.
+## Open the Application
 
+[Open Directory Builder](https://k3aton-g1.shinyapps.io/directory-builder/)
 
-HOW TO USE
-==========
+## How to Use
 
-1. Extract the entire Directory Builder ZIP folder.
+1. Open the Directory Builder using the link above.
 
-2. Open "Directory Builder.R" in RStudio.
-
-3. Click "Run App" at the top of the RStudio script window.
-
-4. The Directory Builder application will open.
-
-5. Click "Select Parent Directory."
-
-   Select the main location where you want your new project folder
-   to be created.
+2. Enter the full name of your project.
 
    Example:
 
-   D:\Research
-
-   or
-
-   C:\Users\YourName\Documents\Projects
-
-6. Enter the full name of your project.
-
-   Example:
-
+   ```text
    Satellite Analysis
+   ```
 
-7. Directory Builder will automatically create a shortened project
-   name and add the current date.
+3. Directory Builder will automatically abbreviate the project name and add the current date.
 
    Example:
 
+   ```text
    Satellite Analysis
           |
           v
@@ -52,90 +32,101 @@ HOW TO USE
           |
           v
    26.09.16_SatAnl
+   ```
 
-8. Review the generated project directory name.
+4. Review the generated project directory name.
 
-9. Click "Create Project."
+5. Click **Download Project Directory**.
 
-10. Your complete project directory will automatically be created
-    inside the Parent Directory you selected.
+6. Your complete project directory will download as a ZIP file.
 
+7. Locate the downloaded ZIP file and extract it into the Parent Directory where you want to store the project.
 
-WHAT DIRECTORY BUILDER CREATES
-==============================
+## What Directory Builder Creates
 
-Every new project contains the following structure:
+Every downloaded project contains the following structure:
 
-PROJECT
-|
-|> 00_READ_ME.txt
-|
-|> 01_ORIGINAL_DATA
-|   |> 01_DOCUMENTS
-|   |> 01_FILES
-|   |> 01_IMAGES
-|   |> 01_TABLES
-|
-|> 02_WORKING_DATA
-|   |> 02_DOCUMENTS
-|   |> 02_FILES
-|   |> 02_IMAGES
-|   |> 02_TABLES
-|
-|> 03_DELIVERABLES
-|   |> 03_DOCUMENTS
-|   |> 03_FILES
-|   |> 03_IMAGES
-|   |> 03_TABLES
-|
-|> 04_DOCUMENTATION
-|   |> DOCUMENTS
-|   |> FILES
-|   |> IMAGES
-|   |> TABLES
-|
-|> 05_SCRIPT
-|
-|> 06_ARCHIVE
-|   |> DOCUMENTS
-|   |> FILES
-|   |> IMAGES
-|   |> TABLES
-|
-|>07_BACKUPS
+* `PROJECT`
 
+  * `00_READ_ME.txt`
+  * `01_ORIGINAL_DATA`
 
-REQUIREMENTS
-============
+    * `01_DOCUMENTS`
+    * `01_FILES`
+    * `01_IMAGES`
+    * `01_TABLES`
+  * `02_WORKING_DATA`
 
-Directory Builder requires:
+    * `02_DOCUMENTS`
+    * `02_FILES`
+    * `02_IMAGES`
+    * `02_TABLES`
+  * `03_DELIVERABLES`
 
-- R
-- RStudio
-- The R package "shiny"
+    * `03_DOCUMENTS`
+    * `03_FILES`
+    * `03_IMAGES`
+    * `03_TABLES`
+  * `04_DOCUMENTATION`
 
-If Shiny is not already installed, run the following command once
-in the RStudio Console:
+    * `04_DOCUMENTS`
+    * `04_FILES`
+    * `04_IMAGES`
+    * `04_TABLES`
+  * `05_SCRIPT`
+  * `06_ARCHIVE`
 
-install.packages("shiny")
+    * `06_DOCUMENTS`
+    * `06_FILES`
+    * `06_IMAGES`
+    * `06_TABLES`
+  * `07_BACKUPS`
 
-After installation, open "Directory Builder.R" and click "Run App."
+## Requirements
 
+Using the hosted Directory Builder only requires:
 
-IMPORTANT
-=========
+* A web browser
+* Access to the Directory Builder link
+* The ability to download and extract a ZIP file
 
-You do not need to edit the Directory Builder R code.
+Users do not need R or RStudio.
+
+The source code is stored in this GitHub repository for documentation, maintenance, and future development. The hosted application runs the R code remotely through shinyapps.io (Posit, 2026).
+
+## Running the Application Locally
+
+Developers who want to run the application locally will need:
+
+* R
+* RStudio
+* The R package `shiny`
+* The R package `zip`
+
+Install the required packages by running:
+
+```r
+install.packages(c("shiny", "zip"))
+```
+
+After installation, open `app.R` and click **Run App**.
+
+## Important Information
+
+You do not need to edit the Directory Builder R code to use the hosted application.
 
 The application automatically:
 
-- Uses the current date
-- Generates the abbreviated project name
-- Allows you to select your own Parent Directory
-- Creates the complete directory structure
-- Creates a project-specific 00_READ_ME.txt
-- Prevents an existing project directory from being overwritten
+* Uses the current date
+* Generates an abbreviated project name
+* Creates the complete directory structure
+* Creates a project-specific `00_READ_ME.txt`
+* Packages the directory as a ZIP file
+* Allows the ZIP file to be downloaded to any computer
 
-The Parent Directory is selected by the user each time the application
-is used. This allows Directory Builder to work on different computers
-without changing the R code.
+After downloading, users choose the Parent Directory by extracting or moving the project folder into the desired location.
+
+## Source
+
+Posit. (2026). *Shinyapps.io user guide*. https://docs.posit.co/shinyapps.io/
+
