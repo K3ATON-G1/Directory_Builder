@@ -1,8 +1,7 @@
-# Directory_Builder
-An R Shiny application for creating standardized project directory structures.
-
-DIRECTORY BUILDER
+DIRECTORY_BUILDER
 =================
+
+An R Shiny application for creating standardized project directory structures.
 
 Directory Builder is an automated R Shiny application for creating a
 standardized project directory structure.
