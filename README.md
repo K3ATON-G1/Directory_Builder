@@ -116,6 +116,9 @@ install.packages(c("shiny", "zip"))
 
 After installation, open `Directory_Builder_Local_Launcher.R` and click **Run App**.
 
+Added step:
+Select location of parent directory. Does not export as .zip file.
+
 ## Important Information
 
 You do not need to edit the Directory Builder R code to use the hosted application.
