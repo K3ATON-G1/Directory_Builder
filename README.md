@@ -69,41 +69,41 @@ Every new project contains the following structure:
 
 PROJECT
 |
-|-- 00_READ_ME.txt
+|> 00_READ_ME.txt
 |
-|-- 01_ORIGINAL_DATA
-|   |-- DOCUMENTS
-|   |-- FILES
-|   |-- IMAGES
-|   `-- TABLES
+|> 01_ORIGINAL_DATA
+|   |> 01_DOCUMENTS
+|   |> 01_FILES
+|   |> 01_IMAGES
+|   |> 01_TABLES
 |
-|-- 02_WORKING_DATA
-|   |-- DOCUMENTS
-|   |-- FILES
-|   |-- IMAGES
-|   `-- TABLES
+|> 02_WORKING_DATA
+|   |> 02_DOCUMENTS
+|   |> 02_FILES
+|   |> 02_IMAGES
+|   |> 02_TABLES
 |
-|-- 03_DELIVERABLES
-|   |-- DOCUMENTS
-|   |-- FILES
-|   |-- IMAGES
-|   `-- TABLES
+|> 03_DELIVERABLES
+|   |> 03_DOCUMENTS
+|   |> 03_FILES
+|   |> 03_IMAGES
+|   |> 03_TABLES
 |
-|-- 04_DOCUMENTATION
-|   |-- DOCUMENTS
-|   |-- FILES
-|   |-- IMAGES
-|   `-- TABLES
+|> 04_DOCUMENTATION
+|   |> DOCUMENTS
+|   |> FILES
+|   |> IMAGES
+|   |> TABLES
 |
-|-- 05_SCRIPT
+|> 05_SCRIPT
 |
-|-- 06_ARCHIVE
-|   |-- DOCUMENTS
-|   |-- FILES
-|   |-- IMAGES
-|   `-- TABLES
+|> 06_ARCHIVE
+|   |> DOCUMENTS
+|   |> FILES
+|   |> IMAGES
+|   |> TABLES
 |
-`-- 07_BACKUPS
+|>07_BACKUPS
 
 
 REQUIREMENTS
